@@ -23,11 +23,12 @@ jobs:
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v6
         with:
-          projectBaseDir: '.'                 # optional, defaults to root
-          projectKey: 'myproject'             # mandatory: your SonarQube project key
+          projectBaseDir: '.'           # repo root or subfolder
+          projectKey: 'MyActualProjectKey'   # exactly as in SonarQube
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_URL }}
+
 
 
       - name: Quality Gate
