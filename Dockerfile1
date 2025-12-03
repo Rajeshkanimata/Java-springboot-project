@@ -1,5 +1,5 @@
 FROM amazoncorretto:11-alpine-jdk
-MAINTAINER shiva
+MAINTAINER naresh
 WORKDIR /app/source
 COPY . .
 RUN ./mvnw clean package -Dspring.profiles.active=build
