@@ -32,7 +32,7 @@ services:
   fe-app:
     container_name: fe-app
     build:
-      context: /Users/shivakumar/Documents/app_projects/python_projects/DataStoreFront/
+      context: /Users/naresh/Documents/app_projects/python_projects/DataStoreFront/
       dockerfile: Dockerfile-frontend
     environment:
       API_URL: http://be-app:8084
