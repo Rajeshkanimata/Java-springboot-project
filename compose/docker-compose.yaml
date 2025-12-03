@@ -4,7 +4,7 @@ services:
     container_name: mydb
     image: mysql
     environment:
-      MYSQL_ROOT_PASSWORD: shivakumar
+      MYSQL_ROOT_PASSWORD: naresh
     healthcheck:
       test: [ "CMD", "mysqladmin", "ping", "-h", "localhost" ]
       interval: 10s
@@ -22,7 +22,7 @@ services:
     environment:
       MYSQL_HOST: "jdbc:mysql://mydb:3306/datastore?createDatabaseIfNotExist=true"
       MYSQL_USERNAME: root
-      MYSQL_PASSWORD: shivakumar
+      MYSQL_PASSWORD: naresh
     links:
       - mydb
     depends_on:
