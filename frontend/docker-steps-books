@@ -1,0 +1,4 @@
+#create a database and change the .env file with your credentials 
+ #create two instances install docker and git an dclone repo
+  in dockerfile check the port and build a image (docker build -t booksbk)
+  and docker run -d -p 80:80 booksbk #as in index.js 80 is the port don't use 3000 anywhere
